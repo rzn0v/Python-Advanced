@@ -8,8 +8,8 @@ now = dt.datetime.now()
 month = now.month
 day = now.day
 today = (month,day)
-my_gmail = "renovardhan@gmail.com"
-password = "aduazoukmitjdplu"
+my_gmail = "yourmail@gmail.com"
+password = "yourpwd"
 letters = ["letter_templates/letter_1.txt","letter_templates/letter_2.txt","letter_templates/letter_3.txt"]
 
 birthday_dict = {(row["month"],row["day"]):(row["name"],row["email"],row["year"],row["month"],row["day"]) for (index, row) in data.iterrows()}
