@@ -3,11 +3,11 @@ import datetime as dt
 import smtplib
 import time
 
-my_gmail = "renovardhan@gmail.com"
-my_pwd = "aduazoukmitjdplu"
+my_gmail = "yourmail@gmail.com"
+my_pwd = "your pwd"
 
-LAT = -40.727
-LNG = -175.2869
+LAT = 0.0000
+LNG = 0.0000
 
 def latlng():
     response1 = requests.get(url="http://api.open-notify.org/iss-now.json")
@@ -46,7 +46,7 @@ while True:
             connection.starttls()
             connection.login(user=my_gmail, password=my_pwd)
             connection.sendmail(from_addr=my_gmail,
-                                to_addrs="rr1148@srmist.edu.in",
+                                to_addrs="recipient@gmail.com",
                                 msg="Subject:LOOK UP!!!\n\nLook up The ISS is above your head"
                         )
     else:
