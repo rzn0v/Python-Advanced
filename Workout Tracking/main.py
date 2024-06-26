@@ -48,4 +48,3 @@ body = {
 }
 
 response1 = requests.post(url=sheety_endpoint, json=body, headers=sheet_header)
-print(response1.status_code)
